@@ -7,21 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7400CAB7EC78F698A55620FF /* Pods_ReduxDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7FC7A3B16B9AE2A95C5A2C /* Pods_ReduxDiary.framework */; };
+		75284B382324E4E100898295 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B372324E4E100898295 /* DiaryCell.swift */; };
+		75284B3B2326898000898295 /* DiaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B3A2326898000898295 /* DiaryItem.swift */; };
+		75284B3D2327B6D900898295 /* DiarySectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75284B3C2327B6D900898295 /* DiarySectionModel.swift */; };
 		7531F5C32323508D003B3314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5C22323508D003B3314 /* AppDelegate.swift */; };
-		7531F5C52323508D003B3314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5C42323508D003B3314 /* ViewController.swift */; };
 		7531F5C82323508D003B3314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531F5C62323508D003B3314 /* Main.storyboard */; };
 		7531F5CA23235092003B3314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7531F5C923235092003B3314 /* Assets.xcassets */; };
 		7531F5CD23235092003B3314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7531F5CB23235092003B3314 /* LaunchScreen.storyboard */; };
+		7531F5DA23235E2E003B3314 /* RxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5D923235E2E003B3314 /* RxStore.swift */; };
+		7531F5DC23235E63003B3314 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5DB23235E63003B3314 /* Action.swift */; };
+		7531F5DE23235E7F003B3314 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5DD23235E7F003B3314 /* Reducer.swift */; };
+		7531F5E023235E9C003B3314 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5DF23235E9C003B3314 /* State.swift */; };
+		7531F5E5232367A3003B3314 /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5E4232367A3003B3314 /* DiaryListViewController.swift */; };
+		7531F5E7232367AD003B3314 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F5E6232367AD003B3314 /* DiaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75284B372324E4E100898295 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		75284B3A2326898000898295 /* DiaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryItem.swift; sourceTree = "<group>"; };
+		75284B3C2327B6D900898295 /* DiarySectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiarySectionModel.swift; sourceTree = "<group>"; };
 		7531F5BF2323508D003B3314 /* ReduxDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7531F5C22323508D003B3314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7531F5C42323508D003B3314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7531F5C72323508D003B3314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7531F5C923235092003B3314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7531F5CC23235092003B3314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7531F5CE23235092003B3314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7531F5D923235E2E003B3314 /* RxStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxStore.swift; sourceTree = "<group>"; };
+		7531F5DB23235E63003B3314 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		7531F5DD23235E7F003B3314 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		7531F5DF23235E9C003B3314 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		7531F5E4232367A3003B3314 /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
+		7531F5E6232367AD003B3314 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
+		8B7FC7A3B16B9AE2A95C5A2C /* Pods_ReduxDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88F3731232506B4BD92B850 /* Pods-ReduxDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDiary.debug.xcconfig"; path = "Target Support Files/Pods-ReduxDiary/Pods-ReduxDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		E09985D0608FCAE804FFC27D /* Pods-ReduxDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxDiary.release.xcconfig"; path = "Target Support Files/Pods-ReduxDiary/Pods-ReduxDiary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +49,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7400CAB7EC78F698A55620FF /* Pods_ReduxDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75284B332324AA4400898295 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75284B3C2327B6D900898295 /* DiarySectionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75284B362324E4C900898295 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75284B372324E4E100898295 /* DiaryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75284B392326896300898295 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				75284B3A2326898000898295 /* DiaryItem.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		7531F5B62323508D003B3314 = {
 			isa = PBXGroup;
 			children = (
 				7531F5C12323508D003B3314 /* ReduxDiary */,
 				7531F5C02323508D003B3314 /* Products */,
+				E9E8CAD1BC060764D56CC4DC /* Pods */,
+				FE5F86418D0B5C8A6FB646D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +102,78 @@
 			isa = PBXGroup;
 			children = (
 				7531F5C22323508D003B3314 /* AppDelegate.swift */,
-				7531F5C42323508D003B3314 /* ViewController.swift */,
-				7531F5C62323508D003B3314 /* Main.storyboard */,
+				7531F5E1232365DD003B3314 /* ViewControllers */,
+				7531F5D523235513003B3314 /* Store */,
+				7531F5D623235520003B3314 /* Actions */,
+				7531F5D72323552A003B3314 /* Reducers */,
+				7531F5D823235532003B3314 /* States */,
+				75284B392326896300898295 /* Entities */,
+				75284B332324AA4400898295 /* Model */,
+				75284B362324E4C900898295 /* View */,
 				7531F5C923235092003B3314 /* Assets.xcassets */,
+				7531F5C62323508D003B3314 /* Main.storyboard */,
 				7531F5CB23235092003B3314 /* LaunchScreen.storyboard */,
 				7531F5CE23235092003B3314 /* Info.plist */,
 			);
 			path = ReduxDiary;
+			sourceTree = "<group>";
+		};
+		7531F5D523235513003B3314 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				7531F5D923235E2E003B3314 /* RxStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		7531F5D623235520003B3314 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				7531F5DB23235E63003B3314 /* Action.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		7531F5D72323552A003B3314 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				7531F5DD23235E7F003B3314 /* Reducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		7531F5D823235532003B3314 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				7531F5DF23235E9C003B3314 /* State.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		7531F5E1232365DD003B3314 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7531F5E4232367A3003B3314 /* DiaryListViewController.swift */,
+				7531F5E6232367AD003B3314 /* DiaryDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9E8CAD1BC060764D56CC4DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A88F3731232506B4BD92B850 /* Pods-ReduxDiary.debug.xcconfig */,
+				E09985D0608FCAE804FFC27D /* Pods-ReduxDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE5F86418D0B5C8A6FB646D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B7FC7A3B16B9AE2A95C5A2C /* Pods_ReduxDiary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7531F5D123235092003B3314 /* Build configuration list for PBXNativeTarget "ReduxDiary" */;
 			buildPhases = (
+				18B7D6F1B923FB581EEC311B /* [CP] Check Pods Manifest.lock */,
 				7531F5BB2323508D003B3314 /* Sources */,
 				7531F5BC2323508D003B3314 /* Frameworks */,
 				7531F5BD2323508D003B3314 /* Resources */,
+				DE5566D77E35DC5055A5E94B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,13 +243,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18B7D6F1B923FB581EEC311B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduxDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5566D77E35DC5055A5E94B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxDiary/Pods-ReduxDiary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxDiary/Pods-ReduxDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7531F5BB2323508D003B3314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7531F5C52323508D003B3314 /* ViewController.swift in Sources */,
+				7531F5DA23235E2E003B3314 /* RxStore.swift in Sources */,
+				75284B3B2326898000898295 /* DiaryItem.swift in Sources */,
 				7531F5C32323508D003B3314 /* AppDelegate.swift in Sources */,
+				75284B3D2327B6D900898295 /* DiarySectionModel.swift in Sources */,
+				75284B382324E4E100898295 /* DiaryCell.swift in Sources */,
+				7531F5DC23235E63003B3314 /* Action.swift in Sources */,
+				7531F5E7232367AD003B3314 /* DiaryDetailViewController.swift in Sources */,
+				7531F5DE23235E7F003B3314 /* Reducer.swift in Sources */,
+				7531F5E5232367A3003B3314 /* DiaryListViewController.swift in Sources */,
+				7531F5E023235E9C003B3314 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +464,7 @@
 		};
 		7531F5D223235092003B3314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88F3731232506B4BD92B850 /* Pods-ReduxDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +483,7 @@
 		};
 		7531F5D323235092003B3314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09985D0608FCAE804FFC27D /* Pods-ReduxDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ReduxDiary
 //
-//  Created by さとうあずま on 2019/09/07.
+//  Created by Azuma on 2019/09/07.
 //
 
 import UIKit

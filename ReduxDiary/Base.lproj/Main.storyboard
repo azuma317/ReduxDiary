@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="riH-rk-VhW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="xVz-Mf-HpV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="riH-rk-VhW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RSx-Sc-vzQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BoR-TJ-jIu" kind="relationship" relationship="rootViewController" id="heB-u2-An6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vww-jf-1uu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-550" y="150"/>
+        </scene>
+        <!--Diary List View Controller-->
+        <scene sceneID="0rA-E7-PYx">
+            <objects>
+                <viewController id="BoR-TJ-jIu" customClass="DiaryListViewController" customModule="ReduxDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8Q-5R-TGt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mig-1d-6MP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiaryCell" rowHeight="60" id="7LM-a9-3Lk" customClass="DiaryCell" customModule="ReduxDiary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7LM-a9-3Lk" id="eXh-1w-SMd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wac-XA-ajE">
+                                                    <rect key="frame" x="20" y="19" width="42" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHg-BW-gW0">
+                                                    <rect key="frame" x="364" y="38.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wac-XA-ajE" secondAttribute="bottom" constant="8" id="UOY-6C-KVF"/>
+                                                <constraint firstAttribute="bottom" secondItem="hHg-BW-gW0" secondAttribute="bottom" id="jDs-m1-BSQ"/>
+                                                <constraint firstItem="wac-XA-ajE" firstAttribute="leading" secondItem="eXh-1w-SMd" secondAttribute="leadingMargin" id="k99-i9-ka8"/>
+                                                <constraint firstItem="hHg-BW-gW0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wac-XA-ajE" secondAttribute="trailing" constant="16" id="tb7-Pa-sBo"/>
+                                                <constraint firstAttribute="trailing" secondItem="hHg-BW-gW0" secondAttribute="trailing" constant="8" id="vU7-xf-Pv8"/>
+                                                <constraint firstItem="wac-XA-ajE" firstAttribute="top" secondItem="eXh-1w-SMd" secondAttribute="topMargin" constant="8" id="ytP-pi-fOe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="diaryDateLabel" destination="wac-XA-ajE" id="DIu-Ze-Qym"/>
+                                            <outlet property="updatedLabel" destination="hHg-BW-gW0" id="yFz-wU-hib"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mig-1d-6MP" firstAttribute="top" secondItem="Fq5-g1-n8s" secondAttribute="top" id="YHE-M6-EWC"/>
+                            <constraint firstItem="Fq5-g1-n8s" firstAttribute="trailing" secondItem="mig-1d-6MP" secondAttribute="trailing" id="d4I-Rp-8rm"/>
+                            <constraint firstItem="Fq5-g1-n8s" firstAttribute="bottom" secondItem="mig-1d-6MP" secondAttribute="bottom" id="wOH-V4-Dvb"/>
+                            <constraint firstItem="mig-1d-6MP" firstAttribute="leading" secondItem="Fq5-g1-n8s" secondAttribute="leading" id="zbp-nM-ETl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fq5-g1-n8s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V93-VL-2IT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tkw-RY-LZi">
+                            <connections>
+                                <segue destination="nqo-cd-fTk" kind="show" identifier="CreateDiarySegue" id="HXJ-Q3-x2O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addDiaryButton" destination="Tkw-RY-LZi" id="h8R-75-DZy"/>
+                        <outlet property="diaryListView" destination="mig-1d-6MP" id="xwB-Dg-Tjf"/>
+                        <segue destination="nqo-cd-fTk" kind="show" identifier="UpdateDiarySegue" id="jst-iy-i76"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="deQ-5W-yH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.68115942028987" y="150"/>
+        </scene>
+        <!--Diary Detail View Controller-->
+        <scene sceneID="Jgc-0P-vvm">
+            <objects>
+                <viewController id="nqo-cd-fTk" customClass="DiaryDetailViewController" customModule="ReduxDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ViP-dL-sSB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-dY-8EZ">
+                                <rect key="frame" x="8" y="96" width="398" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z17-pM-Y6K" firstAttribute="trailing" secondItem="0ea-dY-8EZ" secondAttribute="trailing" constant="8" id="5dK-ac-62i"/>
+                            <constraint firstItem="0ea-dY-8EZ" firstAttribute="top" secondItem="z17-pM-Y6K" secondAttribute="top" constant="8" id="DhJ-u9-R2G"/>
+                            <constraint firstItem="0ea-dY-8EZ" firstAttribute="leading" secondItem="z17-pM-Y6K" secondAttribute="leading" constant="8" id="SG6-6P-2Sr"/>
+                            <constraint firstItem="z17-pM-Y6K" firstAttribute="bottom" secondItem="0ea-dY-8EZ" secondAttribute="bottom" constant="8" id="bKr-N7-6m0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z17-pM-Y6K"/>
+                    </view>
+                    <connections>
+                        <outlet property="diaryTextView" destination="0ea-dY-8EZ" id="kOT-EX-29D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHd-IT-7cL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429" y="150"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jst-iy-i76"/>
+    </inferredMetricsTieBreakers>
 </document>
